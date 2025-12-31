@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Moyosore Junaid - Frontend Developer, AI Enthusiast, and Fullstack Engineer in Progress" />
+  <meta name="keywords" content="Moyosore Junaid, Frontend Developer, AI Development, Web Development, React Developer" />
+  <meta name="author" content="Moyosore Junaid" />
+  
+  <title>Moyosore Junaid | Frontend Developer & AI Enthusiast</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="progressBar" class="progress-bar"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">MJ</div>
+      
+      <ul class="nav-links desktop-nav">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <i data-lucide="menu" class="menu-icon"></i>
+        <i data-lucide="x" class="close-icon hidden"></i>
+      </button>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-avatar floating">
+            <div class="avatar-circle">👩🏿‍💻</div>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Moyosore Junaid</span>
+          </h1>
+          <p class="hero-subtitle" style="color: #ffffff;">
+            Frontend Developer • AI Enthusiast • Fullstack in Progress
+          </p>
+          <p class="hero-description" style="color: #ffffff;">
+            Building intelligent, user-centered web experiences while exploring the intersection of AI and software development
+          </p>
+          <div class="hero-cta">
+            <a href="https://github.com/mojunaid" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i data-lucide="github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/moyo-junaid" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i data-lucide="linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:moyosorejun@gmail.com" class="btn btn-primary">
+              <i data-lucide="mail"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+          <button class="scroll-indicator" data-scroll-to="about" style="color: #ec4899; font-size: 2rem;">
+            <i data-lucide="chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title">
+          About <span class="gradient-text">Me</span>
+        </h2>
+
+        <div class="stats-grid" style="margin-bottom: 3rem;">
+          <div class="stat-card">
+            <p class="stat-number">10+</p>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number">5+</p>
+            <p class="stat-label">Technologies Mastered</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number">4</p>
+            <p class="stat-label">Years Learning</p>
+          </div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-card card-hover">
+            <h3 class="card-title">Who I Am</h3>
+            <p class="card-text">
+              I'm a passionate fourth-year Computer Science student at Pan-Atlantic University, dedicated to building meaningful digital experiences. Born September 14, 2005, I've been on an exciting journey of continuous growth in software development.
+            </p>
+            <p class="card-text">
+              From frontend development to AI integration, I thrive on solving complex problems and creating solutions that make a real impact on users' lives.
+            </p>
+          </div>
+
+          <div class="about-card card-hover">
+            <h3 class="card-title">What I Do</h3>
+            <p class="card-text">
+              I specialize in frontend development with React and Next.js, creating responsive, user-friendly interfaces. Currently expanding into backend development, database management, and AI-powered applications.
+            </p>
+            <p class="card-text">
+              My recent focus has been on building AI agents and educational tools that leverage modern AI APIs to solve real-world problems.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-card card-hover">
+          <h3 class="card-title">
+            <i data-lucide="briefcase"></i>
+            Professional Experience
+          </h3>
+          
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <h4 class="experience-role">AI Engineering Intern</h4>
+                <p class="experience-company">Topgro (AI Consulting & Product Development)</p>
+              </div>
+              <span class="experience-period">July 2025 - September 2025</span>
+            </div>
+            <ul class="experience-highlights">
+              <li>Built and deployed multiple AI-powered products, including conversational assistants, growth and marketing tools, and business idea generation platforms</li>
+              <li>Developed a full backend from scratch using FastAPI and PostgreSQL, deployed on Render, and successfully integrated it with frontend systems built on Lovable AI and Mistral AI</li>
+              <li>Worked on AI agent development and optimization, refining prompts, managing hallucinations, and improving conversational quality and reliability of AI outputs</li>
+              <li>Contributed to GrowthCopilot, a suite of seven AI tools for growth, marketing, sales, and product teams, handling backend integration, deployment, and frontend-backend communication</li>
+              <li>Built a personal knowledge chatbot focused on Operating Systems using LangChain, FAISS vector stores, and document embeddings</li>
+              <li>Collaborated closely with team members through weekly meetings and regular technical discussions, applying feedback to improve system usability and performance</li>
+            </ul>
+          </div>
+
+          <div class="experience-item" style="margin-top: 2rem;">
+            <div class="experience-header">
+              <div>
+                <h4 class="experience-role">Software Development Intern</h4>
+                <p class="experience-company">Uridium Technologies</p>
+              </div>
+              <span class="experience-period">July 2024 - September 2024</span>
+            </div>
+            <ul class="experience-highlights">
+              <li>Built pages for Nova Bank project using Next.js and React</li>
+              <li>Documented Omni-X investment platform for Sterling Bank</li>
+              <li>Enhanced ARCN Initiative website with Governance and Publications sections</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="achievements-card card-hover">
+          <h3 class="card-title">
+            <i data-lucide="award"></i>
+            Achievements & Activities
+          </h3>
+          <div class="achievements-grid">
+            <div class="achievement-item">
+              <span class="achievement-icon">🏆</span>
+              <div>
+                <p class="achievement-title">Best Speaker Award</p>
+                <p class="achievement-desc">2024 Debate Week, Pan-Atlantic University</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-icon">🎯</span>
+              <div>
+                <p class="achievement-title">Finalist - Inter-University Debate</p>
+                <p class="achievement-desc">2025, Pan-Atlantic University</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-icon">💡</span>
+              <div>
+                <p class="achievement-title">Tech-Innovations Club</p>
+                <p class="achievement-desc">Active member, Pan-Atlantic University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section section-alt">
+      <div class="container">
+        <h2 class="section-title">
+          Skills & <span class="gradient-text">Expertise</span>
+        </h2>
+        
+        <div class="skills-grid">
+          <div class="skill-card card-hover">
+            <h3 class="skill-category">
+              <i data-lucide="code"></i>
+              Frontend
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Vite.js</span>
+            </div>
+          </div>
+
+          <div class="skill-card card-hover">
+            <h3 class="skill-category">
+              <i data-lucide="database"></i>
+              Backend & Database
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Render</span>
+            </div>
+          </div>
+
+          <div class="skill-card card-hover">
+            <h3 class="skill-category">
+              <i data-lucide="terminal"></i>
+              Programming
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Rust</span>
+              <span class="skill-tag">OOP Principles</span>
+            </div>
+          </div>
+
+          <div class="skill-card card-hover">
+            <h3 class="skill-category">
+              <i data-lucide="brain"></i>
+              AI & Tools
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Claude API</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">Lovable AI</span>
+              <span class="skill-tag">V0</span>
+              <span class="skill-tag">Vercel AI</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git/GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-card card-hover">
+            <h3 class="skill-category">
+              <i data-lucide="palette"></i>
+              Design & Soft Skills
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">UI/UX Basics</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Team Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid" style="display: none;">
+          <div class="stat-card">
+            <p class="stat-number">10+</p>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number">5+</p>
+            <p class="stat-label">Technologies Mastered</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number">3</p>
+            <p class="stat-label">Years Learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title">
+          Featured <span class="gradient-text">Projects</span>
+        </h2>
+        
+        <div id="projectsGrid" class="projects-grid"></div>
+
+        <div id="projectDetail" class="project-detail hidden">
+          <button class="back-button" id="backToProjects">
+            <i data-lucide="arrow-left"></i>
+            Back to Projects
+          </button>
+          
+          <div id="projectDetailContent"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section section-alt">
+      <div class="container">
+        <h2 class="section-title">
+          Let's <span class="gradient-text">Connect</span>
+        </h2>
+        <p class="section-subtitle">
+          I'm always open to discussing new projects, opportunities, or just having a chat about technology!
+        </p>
+        
+        <div class="contact-grid">
+          <a href="mailto:moyosorejun@gmail.com" class="contact-card card-hover">
+            <i data-lucide="mail" class="contact-icon"></i>
+            <h3 class="contact-title">Email</h3>
+            <p class="contact-info">moyosorejun@gmail.com</p>
+          </a>
+          
+          <a href="https://wa.me/2349031991960" target="_blank" rel="noopener noreferrer" class="contact-card card-hover">
+            <span class="contact-icon">💬</span>
+            <h3 class="contact-title">WhatsApp</h3>
+            <p class="contact-info">+234 903 199 1960</p>
+          </a>
+          
+          <a href="https://linkedin.com/in/moyo-junaid" target="_blank" rel="noopener noreferrer" class="contact-card card-hover">
+            <i data-lucide="linkedin" class="contact-icon"></i>
+            <h3 class="contact-title">LinkedIn</h3>
+            <p class="contact-info">Connect with me</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed & Built by <span class="gradient-text">Moyosore Junaid</span>
+      </p>
+      <p class="footer-copyright">
+        © 2026 All rights reserved • Made with HTML, CSS & JavaScript
+      </p>
+      <div class="footer-social">
+        <a href="https://github.com/mojunaid" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="https://linkedin.com/in/moyojunaid" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="mailto:moyosorejun@gmail.com" aria-label="Email">
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

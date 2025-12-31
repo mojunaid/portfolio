@@ -1,0 +1,400 @@
+/* ===============================================
+   RESPONSIVE STYLES - Mobile First Approach
+   =============================================== */
+
+/* ===== Base Styles (Mobile) ===== */
+/* Already defined in main.css */
+
+/* ===== Small Devices (≥640px) ===== */
+@media (min-width: 640px) {
+  :root {
+    --section-padding: 6rem;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-6xl);
+  }
+
+  .section-title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .project-card {
+    padding: var(--spacing-10);
+  }
+
+  .about-card,
+  .experience-card,
+  .achievements-card {
+    padding: var(--spacing-10);
+  }
+}
+
+/* ===== Medium Devices (≥768px) - Tablets ===== */
+@media (min-width: 768px) {
+  :root {
+    --section-padding: 7rem;
+  }
+
+  /* Navigation */
+  .nav {
+    padding: 0 var(--spacing-6);
+  }
+
+  /* Hero Section */
+  .hero-title {
+    font-size: var(--font-size-7xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: var(--font-size-5xl);
+  }
+
+  /* About Grid */
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Skills Grid */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Stats Grid */
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Projects Grid */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Grid */
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Achievements Grid */
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Experience Header */
+  .experience-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .experience-period {
+    margin-top: 0;
+  }
+
+  /* Project Detail */
+  .project-detail-card {
+    padding: var(--spacing-12);
+  }
+
+  .project-detail-title {
+    font-size: var(--font-size-4xl);
+  }
+
+  /* Detail Image on Tablet */
+  .detail-image {
+    max-height: 350px;
+  }
+
+  .detail-image img {
+    max-height: 350px;
+  }
+
+  /* CTA Card */
+  .cta-card {
+    padding: var(--spacing-12);
+  }
+}
+
+/* ===== Large Devices (≥1024px) - Desktops ===== */
+@media (min-width: 1024px) {
+  :root {
+    --section-padding: 8rem;
+  }
+
+  /* Navigation */
+  .nav {
+    padding: 0 var(--spacing-8);
+  }
+
+  /* Container */
+  .container {
+    padding: 0 var(--spacing-8);
+  }
+
+  /* Skills Grid */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Hero */
+  .hero-description {
+    font-size: var(--font-size-xl);
+  }
+
+  /* Cards get more padding */
+  .about-card,
+  .experience-card,
+  .achievements-card,
+  .skill-card,
+  .contact-card {
+    padding: var(--spacing-12);
+  }
+
+  /* Project Detail - Side by Side Layout */
+  .detail-section-with-image {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .detail-image {
+    position: sticky;
+    top: 6rem;
+    max-height: 450px;
+  }
+
+  .detail-image img {
+    max-height: 450px;
+  }
+}
+
+/* ===== Extra Large Devices (≥1280px) ===== */
+@media (min-width: 1280px) {
+  :root {
+    --section-padding: 10rem;
+  }
+
+  /* Larger hero title */
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .section-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* ===== 2XL Devices (≥1536px) ===== */
+@media (min-width: 1536px) {
+  .container {
+    max-width: var(--container-2xl);
+  }
+}
+
+/* ===== Height-based Media Queries ===== */
+/* For short screens */
+@media (max-height: 700px) {
+  .section {
+    min-height: auto;
+    padding: var(--spacing-16) 0;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+}
+
+/* ===== Touch Device Optimizations ===== */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets */
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .nav-link {
+    padding: var(--spacing-3) var(--spacing-2);
+  }
+
+  /* Disable hover effects on touch devices */
+  .card-hover:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none;
+  }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+  .header,
+  .footer,
+  .scroll-indicator,
+  .progress-bar,
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .section {
+    page-break-inside: avoid;
+    min-height: auto;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .gradient-text {
+    -webkit-text-fill-color: black;
+    color: black;
+  }
+}
+
+/* ===== Accessibility - Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .floating,
+  .scroll-indicator {
+    animation: none;
+  }
+}
+
+/* ===== High Contrast Mode ===== */
+@media (prefers-contrast: high) {
+  :root {
+    --border-color: rgba(236, 72, 153, 0.5);
+  }
+
+  .nav-link::after {
+    height: 3px;
+  }
+
+  .btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* ===== Landscape Orientation on Mobile ===== */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--header-height) + var(--spacing-4));
+    padding-bottom: var(--spacing-8);
+  }
+
+  .section {
+    min-height: auto;
+    padding: var(--spacing-12) 0;
+  }
+
+  .avatar-circle {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+/* ===== Mobile Navigation Fixes ===== */
+@media (max-width: 767px) {
+  /* Prevent scroll when mobile menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* Full height mobile nav */
+  .mobile-nav.active {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: var(--z-modal);
+  }
+
+  /* Stack hero buttons vertically on very small screens */
+  @media (max-width: 480px) {
+    .hero-cta {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .hero-cta .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+/* ===== Fix for Very Small Screens (≤375px) ===== */
+@media (max-width: 375px) {
+  :root {
+    --font-size-5xl: 2.5rem;
+    --font-size-7xl: 3rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-3);
+  }
+
+  .about-card,
+  .experience-card,
+  .achievements-card,
+  .skill-card,
+  .project-card,
+  .contact-card {
+    padding: var(--spacing-6);
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ===== Tablet Landscape Specific (768px - 1024px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  .section {
+    padding: var(--spacing-12) 0;
+  }
+}
+
+/* ===== Focus States for Keyboard Navigation ===== */
+@media (prefers-reduced-motion: no-preference) {
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus {
+    outline: 2px solid var(--pink-400);
+    outline-offset: 2px;
+  }
+}
+
+/* ===== Dark Mode Support (Future Enhancement) ===== */
+@media (prefers-color-scheme: light) {
+  /* If you want to add light mode support in the future */
+  /* Currently designed for dark mode only */
+}
