@@ -80,7 +80,7 @@ MOJUNAID-PORTFOLIO/
 
 ##  Deployment
 
-This website is deployed on [Netlify/Vercel/GitHub Pages - Update with your actual hosting].
+This website is deployed on GitHub Pages.
 
 **Live URL**: [(https://mojunaid.github.io/portfolio/)]
 
@@ -113,7 +113,7 @@ Through building this portfolio, I demonstrated:
 
 ##  License
 
-This project is for educational purposes as part of my Web Development course.
+This project is for educational purposes as part of my Web Development course (CSC 419).
 
 ---
 
