@@ -113,13 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function initNavigation() {
   // Mobile menu toggle
   if (mobileMenuToggle) {
-    const menuIcon = mobileMenuToggle.querySelector('.menu-icon');
-    const closeIcon = mobileMenuToggle.querySelector('.close-icon');
-
     mobileMenuToggle.addEventListener('click', () => {
       mobileNav.classList.toggle('active');
-      menuIcon.classList.toggle('hidden');
-      closeIcon.classList.toggle('hidden');
+      mobileMenuToggle.classList.toggle('active');
       document.body.classList.toggle('menu-open');
     });
   }
@@ -129,10 +125,7 @@ function initNavigation() {
     link.addEventListener('click', () => {
       if (window.innerWidth < 768) {
         mobileNav.classList.remove('active');
-        const menuIcon = mobileMenuToggle.querySelector('.menu-icon');
-        const closeIcon = mobileMenuToggle.querySelector('.close-icon');
-        menuIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
+        mobileMenuToggle.classList.remove('active');
         document.body.classList.remove('menu-open');
       }
     });
